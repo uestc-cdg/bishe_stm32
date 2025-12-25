@@ -2,6 +2,7 @@
 
 #include <ctype.h>
 #include <string.h>
+#include <stdio.h>
 
 /* 命令表由业务层提供 */
 extern const SCPI_Entry_t scpi_commands[];
@@ -70,7 +71,9 @@ void SCPI_Parse(char *input_string)
     size_t cmd_len;
 
     if (input_string == 0)
+    {
         return;
+    }
 
     /* 允许输入携带 CRLF，先裁剪尾部 */
     scpi_trim_eol(input_string);
@@ -94,7 +97,9 @@ void SCPI_Parse(char *input_string)
 
     cmd_len = strlen(cmd_start);
     if (cmd_len == 0)
+    {
         return;
+    }
 
     for (i = 0; i < scpi_commands_count; i++)
     {
