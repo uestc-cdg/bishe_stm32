@@ -1,0 +1,54 @@
+# Keil MDK IDE 配置文件
+*.uvprojx
+*.uvoptx
+*.uvguix*
+*.uvproj
+*.uvopt
+
+# 编译输出文件
+OBJ/
+*.o
+*.d
+*.crf
+*.lst
+*.map
+*.htm
+*.dep
+*.axf
+*.hex
+*.bin
+*.elf
+
+# 调试配置文件
+DebugConfig/
+*.dbgconf
+
+# 日志文件
+*.txt
+*.log
+*.ini
+
+# 临时文件
+*.bak
+*.tmp
+*~
+.DS_Store
+Thumbs.db
+
+# IDE 工作区文件
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 其他编译相关
+*.su
+*.suo
+*.user
+*.sdf
+*.opendb
+
+# 保留源代码和头文件
+# !*.c
+# !*.h
+
